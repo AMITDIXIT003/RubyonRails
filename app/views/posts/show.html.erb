@@ -1,4 +1,4 @@
-<h1>This is Index page for  Posts !!</h1>
-<h3>This First Sample Blog</h3>
-<p>This is sample text for sample bolg 1</p>
-<p>Find me in app/views/home/index.html.erb</p>
+<h1>Post</h1>
+<h3><%= @post.title %></h3>
+<small><%= @post.created_at.strftime("%b %d. %Y") %></small>
+<p><%= @post.body %></p>

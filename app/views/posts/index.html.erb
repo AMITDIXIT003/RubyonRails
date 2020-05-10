@@ -1,4 +1,6 @@
-<h1><%= @title %></h1>
-<h3>This First Sample Blog</h3>
-<p><%= @content_first %></p>
-<p>Find me in app/views/home/index.html.erb</p>
+<h1>Blog Posts</h1>
+<% @posts.each do |post| %>
+<h3><%= link_to post.title,post %></h3>
+<p><%= post.body %></p>
+</hr>
+<% end %>
