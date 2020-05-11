@@ -1,4 +1,4 @@
 class Category < ApplicationRecord
-	atrr_accessor :name
+	atrr_accessible :name
 	has_many :post
 end
